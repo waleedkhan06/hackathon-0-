@@ -1,0 +1,14 @@
+# Railway Build Configuration
+# https://nixpacks.com/docs
+
+[phases.setup]
+nixPkgs = ["python311", "nodejs_18", "git"]
+
+[phases.install]
+cmds = ["pip install -r requirements.txt", "playwright install chromium"]
+
+[phases.build]
+cmds = ["echo 'Build complete'"]
+
+[start]
+cmd = "python3 cloud_agent.py"
