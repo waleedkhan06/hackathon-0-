@@ -1,4 +1,4 @@
-# 🤖 AI Employee Gold Tier - Autonomous Digital FTE
+# 🥇 Gold Tier AI Employee - Autonomous Digital FTE
 
 **Your life and business on autopilot. Local-first, agent-driven, human-in-the-loop.**
 
@@ -9,30 +9,17 @@
 
 ---
 
-## 📋 TABLE OF CONTENTS
+## 🎬 DEMO VIDEO
 
-- [Overview](#-overview)
-- [Features](#-features)
-- [Architecture](#-architecture)
-- [Quick Start](#-quick-start)
-- [Platform Support](#-platform-support)
-- [Human-in-the-Loop Workflow](#-human-in-the-loop-workflow)
-- [Installation](#-installation)
-- [Configuration](#-configuration)
-- [Usage](#-usage)
-- [Project Structure](#-project-structure)
-- [Testing](#-testing)
-- [Requirements Compliance](#-requirements-compliance)
-- [Contributing](#-contributing)
-- [License](#-license)
+**Watch the Gold Tier AI Employee in action:** [**▶️ YouTube Demo**](https://youtu.be/Sl1o89oTldM)
 
 ---
 
 ## 🎯 OVERVIEW
 
-The **AI Employee Gold Tier** is a production-ready autonomous AI system that manages your personal and business communications across **5 platforms** 24/7. Built with a local-first, privacy-focused architecture, it uses AI agents to proactively handle emails, social media posts, and messaging while keeping humans in control through an approval workflow.
+The **Gold Tier AI Employee** is a production-ready autonomous AI system that manages your personal and business communications across **5 platforms** 24/7. Built with a local-first, privacy-focused architecture, it uses AI agents to proactively handle emails, social media posts, and messaging while keeping humans in control through an approval workflow.
 
-### **Key Value Proposition:**
+### **Key Value Proposition**
 
 | Metric | Human Employee | AI Employee |
 |--------|----------------|-------------|
@@ -44,15 +31,15 @@ The **AI Employee Gold Tier** is a production-ready autonomous AI system that ma
 
 ---
 
-## ✨ FEATURES
+## ✨ KEY ACHIEVEMENTS
 
 ### **🌐 Multi-Platform Automation**
 
-- **✅ Gmail** - Send/receive emails via Gmail API
-- **✅ Facebook** - Post updates via Meta Graph API
-- **✅ Instagram** - Post photos via Meta Graph API
-- **✅ LinkedIn** - Professional posts via browser automation
-- **✅ WhatsApp** - Messaging via browser automation
+- ✅ **Gmail** - Send/receive emails via Gmail API
+- ✅ **Facebook** - Post updates via Meta Graph API
+- ✅ **Instagram** - Post photos via Meta Graph API
+- ✅ **LinkedIn** - Professional posts via browser automation
+- ✅ **WhatsApp** - Messaging via browser automation
 
 ### **🔒 Human-in-the-Loop (HITL)**
 
@@ -69,7 +56,7 @@ The **AI Employee Gold Tier** is a production-ready autonomous AI system that ma
 - Bottleneck identification
 - Proactive suggestions
 
-### **🛡️ Production-Ready**
+### **🛡️ Production-Ready Features**
 
 - Comprehensive audit logging (90-day retention)
 - Error recovery & graceful degradation
@@ -103,16 +90,10 @@ The **AI Employee Gold Tier** is a production-ready autonomous AI system that ma
 │  ├── Instagram MCP (Meta Graph API)                     │
 │  ├── LinkedIn Poster (Playwright)                       │
 │  └── WhatsApp Sender (Playwright)                       │
-├─────────────────────────────────────────────────────────┤
-│  SUPPORT SKILLS                                         │
-│  ├── Approval Workflow (HITL)                           │
-│  ├── Audit Logger (90-day retention)                    │
-│  ├── CEO Briefing Generator                             │
-│  └── Social Media Manager                               │
 └─────────────────────────────────────────────────────────┘
 ```
 
-### **Workflow:**
+### **Workflow**
 
 ```
 Watcher detects → /needs_action/ → Orchestrator creates Plan.md
@@ -126,225 +107,140 @@ Approval needed? → /pending_approval/ → Human approves (drag-drop)
 
 ---
 
-## 🚀 QUICK START
-
-### **1. Generate Post Template**
-
-```bash
-python3 scripts/generate_post.py facebook
-```
-
-### **2. Edit Content**
-
-```bash
-nano pending_approval/FACEBOOK_POST_*.md
-```
-
-**Important:** Remove brackets `[]` and use real values!
-
-### **3. Approve**
-
-```bash
-# Option A: Command
-mv pending_approval/FACEBOOK_POST_*.md approved/
-
-# Option B: VS Code Drag-Drop
-# Just drag file from pending_approval/ to approved/
-```
-
-### **4. Auto-Executes!**
-
-Orchestrator runs every 10 seconds, detects approved files, and executes automatically.
-
----
-
-## 🌐 PLATFORM SUPPORT
-
-| Platform | Method | Auto-Execute | Speed | Status |
-|----------|--------|--------------|-------|--------|
-| **Email** | Gmail API | ✅ Yes | <10s | ✅ Working |
-| **Facebook** | Meta Graph API | ✅ Yes | ~4s | ✅ Working |
-| **Instagram** | Meta Graph API | ✅ Yes | ~10s | ✅ Working |
-| **LinkedIn** | Playwright | ⚠️ Manual | 60-90s | ✅ Working |
-| **WhatsApp** | Playwright | ⚠️ Manual | 30-60s | ✅ Working |
-
----
-
-## 🔒 HUMAN-IN-THE-LOOP WORKFLOW
-
-### **Approval Process:**
-
-1. **Template Created** → `pending_approval/FILE.md` (status: pending)
-2. **User Edits** → Add real content (remove placeholders)
-3. **User Approves** → Move to `approved/` (drag-drop or command)
-4. **Orchestrator Detects** → Auto-updates status to "approved"
-5. **Auto-Executes** → API-based platforms (Email, FB, IG)
-6. **Manual Execute** → Browser-based (LinkedIn, WhatsApp)
-7. **Audit Trail** → File moved to `done/`
-
-### **Security:**
-
-- ✅ All actions logged
-- ✅ No actions without approval
-- ✅ Credentials never synced
-- ✅ Local-first architecture
-
----
-
-## 📦 INSTALLATION
-
-### **Prerequisites:**
-
-- Python 3.12+
-- Node.js 18+ (for Claude Code)
-- Git
-
-### **1. Clone Repository**
-
-```bash
-git clone <your-repo-url>
-cd gold-tier-ai-employee
-```
-
-### **2. Create Virtual Environment**
-
-```bash
-python3 -m venv venv
-source venv/bin/activate  # Linux/Mac
-# or
-venv\Scripts\activate  # Windows
-```
-
-### **3. Install Dependencies**
-
-```bash
-pip install -r requirements.txt
-```
-
-### **4. Install Playwright**
-
-```bash
-playwright install chromium
-```
-
----
-
-## ⚙️ CONFIGURATION
-
-### **1. Copy Environment Template**
-
-```bash
-cp .env.example .env
-```
-
-### **2. Edit `.env` with Your Credentials**
-
-```bash
-# Gmail API
-GMAIL_CLIENT_ID=your_client_id
-GMAIL_CLIENT_SECRET=your_secret
-GMAIL_REFRESH_TOKEN=your_token
-
-# Meta API (Facebook & Instagram)
-META_APP_ID=your_app_id
-META_APP_SECRET=your_secret
-FACEBOOK_PAGE_ID=your_page_id
-FACEBOOK_PAGE_ACCESS_TOKEN=your_token
-INSTAGRAM_BUSINESS_ACCOUNT_ID=your_account_id
-INSTAGRAM_ACCESS_TOKEN=your_token
-
-# System
-DEMO_MODE=false
-AUDIT_RETENTION_DAYS=90
-```
-
-### **3. Generate Gmail Token (Optional)**
-
-```bash
-python3 generate_gmail_token.py
-```
-
----
-
-## 📖 USAGE
-
-### **Generate Templates**
-
-```bash
-# All platforms
-python3 scripts/generate_post.py all
-
-# Individual platforms
-python3 scripts/generate_post.py email
-python3 scripts/generate_post.py facebook
-python3 scripts/generate_post.py instagram
-python3 scripts/generate_post.py linkedin
-python3 scripts/generate_post.py whatsapp
-```
-
-### **Start Autonomous System**
-
-```bash
-python3 main.py
-```
-
-This starts:
-- All 5 watchers (continuous monitoring)
-- Orchestrator (auto-executes approved files)
-- Scheduler (daily briefings, weekly audits, social posts)
-
-### **Manual Execution**
-
-```bash
-# LinkedIn
-python3 post_linkedin.py
-
-# WhatsApp
-python3 skills/whatsapp_sender_fast.py
-```
-
----
-
 ## 📁 PROJECT STRUCTURE
 
 ```
-gold-tier-ai-employee/
-├── 📂 scripts/              # Post generators
-│   └── generate_post.py    # Template generator
-├── 📂 watchers/             # Perception layer
+3-gold-tier-ai-employee/
+├── 📂 watchers/             # Perception layer (5 platforms)
 │   ├── gmail_watcher.py
 │   ├── whatsapp_watcher.py
 │   ├── facebook_watcher.py
 │   ├── instagram_watcher.py
 │   └── linkedin_watcher.py
-├── 📂 mcp_servers/          # Action layer
+├── 📂 mcp_servers/          # Action layer (API integrations)
 │   ├── email_mcp.py
 │   ├── facebook_mcp_api.py
 │   └── instagram_mcp_api.py
-├── 📂 skills/               # Agent skills
+├── 📂 skills/               # Agent skills (modular)
 │   ├── approval_workflow.py
 │   ├── audit_logger.py
 │   ├── ceo_briefing_generator.py
 │   ├── linkedin_poster_final.py
 │   ├── whatsapp_sender.py
-│   ├── whatsapp_sender_fast.py
 │   └── social_media_poster.py
-├── 📂 pending_approval/     # Awaiting review
+├── 📂 scripts/              # Utility scripts
+│   └── generate_post.py    # Post template generator
+├── 📂 pending_approval/     # Awaiting human review
 ├── 📂 approved/             # Ready to execute
-├── 📂 done/                 # Executed (audit)
-├── 📂 logs/                 # System logs
-│   └── audit/              # Audit trails
-├── 📄 main.py               # Entry point
+├── 📂 done/                 # Executed (audit trail)
+├── 📄 main.py               # Main entry point
 ├── 📄 orchestrator.py       # Task coordinator
-├── 📄 scheduler.py          # Scheduled ops
+├── 📄 scheduler.py          # Scheduled operations
 ├── 📄 ralph_wiggum.py       # Persistence loop
-├── 📄 post_linkedin.py      # Quick LinkedIn
-├── 📄 .env                  # Configuration
-├── 📄 .env.example          # Template config
-├── 📘 SYSTEM_GUIDE.md       # Complete guide
-├── 📘 REQUIREMENTS_ANALYSIS.md  # Tier compliance
-└── 📘 README.md             # This file
+├── 📘 SYSTEM_GUIDE.md       # Complete system guide
+└── 📘 REQUIREMENTS_ANALYSIS.md  # Tier compliance report
 ```
+
+---
+
+## ✅ IMPLEMENTATION STATUS
+
+### **Gold Tier Requirements: 10/10 (100%)**
+
+| Requirement | Status | Implementation |
+|-------------|--------|----------------|
+| All Silver Tier | ✅ | Complete |
+| Cross-domain integration | ✅ | Personal + Business |
+| Facebook & Instagram | ✅ | Meta Graph API |
+| Multiple MCP servers | ✅ | Email, Facebook, Instagram |
+| Weekly Audit + CEO Briefing | ✅ | Auto-generated |
+| Error recovery | ✅ | Graceful degradation |
+| Audit logging | ✅ | 90-day retention |
+| Ralph Wiggum loop | ✅ | Implemented |
+| Documentation | ✅ | Complete |
+| Agent Skills | ✅ | All modularized |
+
+**Optional (Excluded per user request):**
+- ⚠️ Odoo accounting integration
+- ⚠️ Twitter/X integration
+
+**Status: ✅ GOLD TIER ACHIEVED**
+
+---
+
+## 🚀 QUICK START
+
+### **Prerequisites**
+
+```bash
+# Python 3.12+
+python3 --version
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Install Playwright browsers
+playwright install chromium
+```
+
+### **Configuration**
+
+```bash
+# Copy environment template
+cp .env.example .env
+
+# Edit with your credentials:
+# - Gmail API (OAuth2)
+# - Meta API (Facebook & Instagram)
+# - LinkedIn (browser automation)
+```
+
+### **Run the System**
+
+```bash
+# Start autonomous system
+python3 main.py
+
+# Or run components individually:
+python3 orchestrator.py    # Task coordination
+python3 scheduler.py       # Scheduled operations
+python3 post_linkedin.py   # Quick LinkedIn post
+```
+
+---
+
+## 🔒 HUMAN-IN-THE-LOOP WORKFLOW
+
+### **Approval Process**
+
+1. **Template Created** → `pending_approval/FILE.md`
+2. **User Reviews** → Edit content if needed
+3. **User Approves** → Move to `approved/` folder
+4. **System Executes** → Auto-executes (API) or manual (Playwright)
+5. **Audit Trail** → File moved to `done/`
+
+### **Execution Methods**
+
+| Platform | Method | Auto-Execute |
+|----------|--------|--------------|
+| Email | Gmail API | ✅ Yes |
+| Facebook | Meta Graph API | ✅ Yes |
+| Instagram | Meta Graph API | ✅ Yes |
+| LinkedIn | Playwright | ⚠️ Manual |
+| WhatsApp | Playwright | ⚠️ Manual |
+
+---
+
+## 📊 DEMO VIDEO HIGHLIGHTS
+
+The [YouTube demo](https://youtu.be/Sl1o89oTldM) showcases:
+
+1. **System Architecture** - Overview of Gold Tier components
+2. **Multi-Platform Integration** - Gmail, Facebook, Instagram, LinkedIn, WhatsApp
+3. **HITL Workflow** - Drag-and-drop approval process
+4. **Auto-Execution** - API-based platforms execute automatically
+5. **Audit Logging** - Complete audit trail in `/done/` folder
+6. **CEO Briefing** - Weekly business audit generation
 
 ---
 
@@ -353,70 +249,45 @@ gold-tier-ai-employee/
 ### **Quick Test**
 
 ```bash
-# Generate and test all platforms
+# Generate test posts for all platforms
 python3 scripts/generate_post.py all
 
-# Edit templates
-nano pending_approval/*.md
+# Review generated templates
+ls pending_approval/
 
-# Approve
+# Approve all
 mv pending_approval/*.md approved/
 
-# Execute
+# Execute (wait for orchestrator)
 timeout 30 python3 orchestrator.py
 
-# Verify
-ls -la done/
+# Verify completion
+ls done/
 ```
 
 ### **Platform-Specific Tests**
 
 ```bash
-# Email
+# Email test
 python3 scripts/generate_post.py email
 # Edit → Approve → Auto-sends in 10s
 
-# Facebook
+# Facebook test
 python3 scripts/generate_post.py facebook
 # Edit → Approve → Auto-posts in 4s
 
-# Instagram
+# Instagram test
 python3 scripts/generate_post.py instagram
 # Edit → Approve → Auto-posts in 10s
-
-# LinkedIn
-python3 scripts/generate_post.py linkedin
-# Edit → Approve → python3 post_linkedin.py
-
-# WhatsApp
-python3 scripts/generate_post.py whatsapp
-# Edit → Approve → python3 skills/whatsapp_sender_fast.py
 ```
 
 ---
 
-## ✅ REQUIREMENTS COMPLIANCE
+## 📖 DOCUMENTATION
 
-### **Gold Tier Requirements: 10/12 (83%)**
-
-| Requirement | Status | Notes |
-|-------------|--------|-------|
-| All Silver Tier | ✅ Complete | |
-| Cross-domain integration | ✅ Complete | Personal + Business |
-| Facebook & Instagram | ✅ Complete | Meta Graph API |
-| Multiple MCP servers | ✅ Complete | 3 MCPs |
-| Weekly Audit + CEO Briefing | ✅ Complete | Auto-generated |
-| Error recovery | ✅ Complete | Graceful degradation |
-| Audit logging | ✅ Complete | 90-day retention |
-| Ralph Wiggum loop | ✅ Complete | Implemented |
-| Documentation | ✅ Complete | Full docs |
-| Agent Skills | ✅ Complete | All modularized |
-| Odoo accounting | ⚠️ Optional | User confirmed optional |
-| Twitter integration | ⚠️ Optional | User confirmed optional |
-
-**Status: ✅ GOLD TIER ACHIEVED**
-
-See `REQUIREMENTS_ANALYSIS.md` for detailed breakdown.
+- **[SYSTEM_GUIDE.md](SYSTEM_GUIDE.md)** - Complete system guide with setup instructions
+- **[REQUIREMENTS_ANALYSIS.md](REQUIREMENTS_ANALYSIS.md)** - Gold Tier compliance report
+- **[TESTING_WORKFLOW.md](TESTING_WORKFLOW.md)** - Testing guide
 
 ---
 
@@ -432,21 +303,7 @@ See `REQUIREMENTS_ANALYSIS.md` for detailed breakdown.
 
 ## 📄 LICENSE
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
----
-
-## 📧 SUPPORT
-
-- **Documentation:** `SYSTEM_GUIDE.md`
-- **Issues:** GitHub Issues
-- **Email:** your-email@example.com
-
----
-
-## 🎬 DEMO VIDEO
-
-**Watch the AI Employee in action:** [YouTube Link](https://youtube.com/your-video)
+This project is licensed under the MIT License.
 
 ---
 
